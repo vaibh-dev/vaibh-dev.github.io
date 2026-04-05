@@ -782,6 +782,16 @@
 
       <div class="project-card fade-up">
         <div class="project-num">01</div>
+        <div class="project-name">Rideflow Saga Choreography</div>
+        <div class="project-desc">Uber-style ride booking backend built with six independent microservices communicating exclusively via Kafka events — no direct service-to-service calls. Implements choreography-based Saga pattern where each service reacts to events and handles its own compensating rollback on failure. Driver matching uses Redis geospatial indexing to find the nearest available driver in milliseconds. Real-time GPS tracking streams driver location to the rider via WebSocket and Redis pub/sub. Payments are idempotency-keyed to prevent double charging on duplicate Kafka delivery. Guaranteed event delivery achieved through the Outbox pattern — events survive service crashes. Includes Dead Letter Queue with exponential backoff retry for failed notifications.</div>
+        <div class="project-tech">
+          <span class="tech-tag">Java</span><span class="tech-tag">Spring Boot</span><span class="tech-tag">Kafka</span><span class="tech-tag">Redis</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">WebSocket</span><span class="tech-tag">Docker</span><span class="tech-tag">Microservices</span>
+          <a href="https://github.com/vaibdevs/rideflow-saga-choreography.git" target="_blank" style="display:inline-flex;align-items:center;gap:.3rem;font-size:.72rem;color:var(--green);border:1px solid var(--green-dim);padding:.15rem .55rem;border-radius:2px;text-decoration:none;letter-spacing:.05em;">↗ GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card fade-up">
+        <div class="project-num">02</div>
         <div class="project-name">Job Board API</div>
         <div class="project-desc">REST API connecting employers and jobseekers. Employers create companies and post jobs, jobseekers search and apply with resume upload. Secured with JWT authentication, role-based access control, and ownership-level checks. Dynamic job search via JPA Specifications, schema managed with Flyway migrations, and fully containerised with Docker Compose.</div>
         <div class="project-tech">
@@ -791,7 +801,7 @@
       </div>
 
       <div class="project-card fade-up">
-        <div class="project-num">02</div>
+        <div class="project-num">03</div>
         <div class="project-name">Data Processing Platform</div>
         <div class="project-desc">Automated extraction from Random User Generator API, ingested into Kafka streams for real-time processing. Used Apache Spark for transformation and analysis. Processed data stored in Cassandra, orchestrated via Airflow, and containerised with Docker.</div>
         <div class="project-tech">
@@ -801,7 +811,7 @@
       </div>
 
       <div class="project-card fade-up">
-        <div class="project-num">03</div>
+        <div class="project-num">04</div>
         <div class="project-name">Real-Time Data Streaming</div>
         <div class="project-desc">Real-time data pipeline for streaming stock data using Apache Kafka, Python, and AWS. Producer streams stock data to a consumer storing JSON records in S3. Integrated AWS Glue for data cataloging and Athena for SQL queries enabling continuous analysis.</div>
         <div class="project-tech">
@@ -811,7 +821,7 @@
 
       <div class="project-card fade-up">
         <div class="project-award">Walmart Hackathon 2024</div>
-        <div class="project-num">04</div>
+        <div class="project-num">05</div>
         <div class="project-name">Smart Inventory Management Tool</div>
         <div class="project-desc">AI-powered inventory management system featuring real-time stock monitoring and automated reordering. Certificate of Appreciation at Walmart Hackathon 2024.</div>
         <div class="project-tech">
@@ -821,7 +831,7 @@
 
       <div class="project-card fade-up">
         <div class="project-award">Innovation Week Hackathon 2024 Winner</div>
-        <div class="project-num">05</div>
+        <div class="project-num">06</div>
         <div class="project-name">Deep Learning Plant Disease Detection</div>
         <div class="project-desc">Developed and deployed a plant disease detection system using deep learning to identify crop diseases at scale with high accuracy.</div>
         <div class="project-tech">
@@ -831,7 +841,7 @@
 
       <div class="project-card fade-up">
         <div class="project-award">Smart India Hackathon 2023 Winner</div>
-        <div class="project-num">06</div>
+        <div class="project-num">07</div>
         <div class="project-name">AI/ML Cybersecurity Tool</div>
         <div class="project-desc">Cybersecurity tool for anomaly detection in network traffic and enhanced threat prevention using machine learning algorithms.</div>
         <div class="project-tech">
